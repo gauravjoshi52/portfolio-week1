@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <h1 class="logo">My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dynamic Greeting -->
+    <div class="greeting" id="greetingMessage"></div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm a full-stack developer who enjoys learning and building projects step by step.
+            I like creating simple, meaningful websites and applications that help people and solve real problems.
+            I'm currently improving my frontend and backend skills so I can build full functional applications in the
+            future.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>React</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-box">
+            <h3>Real-Time Chat App</h3>
+            <p>
+                A beginner chat app concept where users can send and receive messages instantly.
+                It's mainly a learning project to understand how chat systems work.
+            </p>
+        </div>
+
+        <div class="project-box">
+            <h3>Event Scheduler App</h3>
+            <p>
+                A simple app idea where users can add tasks or events and track their schedule.
+                It helped me understand basic form handling and planning UI layouts.
+            </p>
+        </div>
+
+        <div class="project-box">
+            <h3>Cancer Awareness Website</h3>
+            <p>
+                A small educational website that spreads awareness about cancer prevention, symptoms,
+                early detection, and helpful resources.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p class="success-message" id="successMsg"></p>
+    </section>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">⬆</button>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

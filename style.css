@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7faff;
+    color: #222;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    background: #1e90ff;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Sections */
+section {
+    margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #1e90ff;
+}
+
+#skills ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* Projects */
+.project-box {
+    background: #e5f1ff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    background: #cfe6ff;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #1e90ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005bbb;
+}
+
+.success-message {
+    margin-top: 10px;
+    color: green;
+    font-weight: 600;
+}
+
+/* Dynamic Greeting */
+.greeting {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Scroll To Top Button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #1e90ff;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-top-btn:hover {
+    background: #005bbb;
+    transform: scale(1.1);
+}
